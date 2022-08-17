@@ -3,7 +3,7 @@
 local M = {}
 
 -- make sure you maintain the structure of `core/default_config.lua` here,
--- example of changing theme:
+-- example of changing theme
 
 vim.o.relativenumber = true
 
@@ -19,17 +19,17 @@ M.plugins = {
         require "custom.plugins.lspconfig"
       end,
     },
-    ["williamboman/mason.nvim"] = {
-      ensure_installed = {
-        "lua-language-server",
-        "typescript-language-server",
-      },
-    },
-    ["windwp/nvim-ts-autotag"] = {
+    ["nvim-treesitter/nvim-treesitter"] = {
       config = function()
-        require "nvim-ts-autotag"
+        require "custom.plugins.treesitter"
       end,
     },
+    ["kyazdani42/nvim-tree.lua"] = {
+      config = function()
+        require "custom.plugins.nvimtree"
+      end,
+    },
+    ["windwp/nvim-ts-autotag"] = {},
     ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",
       config = function()
