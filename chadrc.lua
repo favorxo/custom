@@ -37,6 +37,9 @@ M.plugins = {
       end,
     },
   },
+  remove = {
+    "lewis6991/gitsigns.nvim",
+  },
 }
 
 return M

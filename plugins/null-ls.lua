@@ -7,13 +7,16 @@ end
 local b = null_ls.builtins
 
 local sources = {
-  -- Webdev stuff
-  b.formatting.prettier,
+  -- webdev stuff
+  b.formatting.prettierd,
   b.formatting.goimports,
+  b.formatting.buf,
+  b.diagnostics.buf,
+  b.code_actions.eslint_d,
+  b.diagnostics.eslint_d,
 
   -- Lua
   b.formatting.stylua,
-
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 }
 
