@@ -9,14 +9,19 @@ local b = null_ls.builtins
 local sources = {
   -- webdev stuff
   b.formatting.prettierd,
+
+  -- go lang
   b.formatting.goimports,
-  b.formatting.buf,
-  b.diagnostics.buf,
-  b.code_actions.eslint_d,
-  b.diagnostics.eslint_d,
+
+  -- python
+  b.formatting.black,
 
   -- Lua
   b.formatting.stylua,
+
+  -- rust
+  b.formatting.rustfmt,
+
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 }
 

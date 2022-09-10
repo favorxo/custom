@@ -20,6 +20,7 @@ local options = {
     "c",
     "lua",
     "rust",
+    "json",
   },
   highlight = {
     enable = true,
