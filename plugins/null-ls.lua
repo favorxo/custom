@@ -7,16 +7,16 @@ end
 local b = null_ls.builtins
 
 local sources = {
-  -- webdev stuff
+  -- js/ts
   b.formatting.prettierd,
 
-  -- go lang
+  -- golang
   b.formatting.goimports,
 
   -- python
   b.formatting.black,
 
-  -- Lua
+  -- lua
   b.formatting.stylua,
 
   -- rust

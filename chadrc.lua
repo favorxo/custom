@@ -7,10 +7,6 @@ local M = {}
 
 vim.o.relativenumber = true
 
-M.ui = {
-  theme = "ayu-dark",
-}
-
 M.plugins = {
   user = {
     ["neovim/nvim-lspconfig"] = {
